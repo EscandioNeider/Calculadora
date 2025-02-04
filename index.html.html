@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da Calculadora</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <center>
+        <h1>CALCULADORA</h1>
+    <p>Isso aqui é uma calculadora 
+        <br>
+        Informe os números que quiser e a operação será feita!</p>
+    </center>
+        <br><br>
+            <div class="container-operacoes">
+                <input type="text" placeholder="Resultado" id="resultado" disabled> 
+                <br>
+                <input type="text" placeholder="Digite um número aqui" id="n1">
+                <br><br>
+                <input type="text" placeholder="Digite outro número aqui" id="n2">
+                <br><br>
+                <div class="botoes">
+                    <button class="soma" onclick="Soma()">+</button>
+                    <button class="sub" onclick="Sub()">-</button>
+                    <button class="mul" onclick="Multi()">x</button>
+                    <button class="divi" onclick="Divi()">:</button>
+                </div>
+                <br>
+                <button class="ac" onclick="LimparCampos()">AC</button> <!-- Não inserida -->
+            </div>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #bbaeae;
+        text-align: center;
+    }
+    
+    h1 {
+        color: rgb(0, 0, 0);
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        color: rgb(0, 0, 0);
+    }
+    
+    .container-operacoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: #0202029d;
+        color: rgb(255, 250, 250);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 250px;
+    }
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid rgb(80, 80, 80);
+        border-radius: 5px;
+        font-size: 1rem;
+        text-align: center;
+        background-color: rgb(97, 96, 96);
+    }
+    
+    input::placeholder{
+        color: rgb(255, 254, 249);;
+    }
+
+    input:focus {
+        border-color: rgba(185, 161, 79, 0.733);
+        outline: none;
+    }
+    
+    button {
+        width: 60px;
+        height: 40px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 5px;
+        color: rgb(226, 195, 91);
+        transition: 0.3s;
+    }
+    
+    .botoes{
+        display: inline;
+    }
+    .soma, .sub, .mul, .divi {
+        background-color: rgb(104, 102, 102);
+    }
+    
+    .ac{
+        background-color: #b16072;
+    }
+    button:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+    
+    #resultado, #resultado::placeholder {
+        background-color: #85876f;
+        color:rgba(0, 0, 0, 0.616);
+        font-weight: bold;
+    }
+    
+</style>
