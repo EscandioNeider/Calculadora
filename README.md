@@ -13,4 +13,4 @@ Este site foi uma proposta de aula de Front-End + Javascript.
 ## 🏷 Tags:
 `#Math`  `#Matemática`  `#Calculator` `#Calculadora`
 
-🔗 Visite meu projeto! (https://escandioneider.github.io/Calculadora/)
+🔗 Visite meu projeto! (https://escandioneider.github.io/Calculadora/index.html)
