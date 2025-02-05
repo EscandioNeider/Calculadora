@@ -1,12 +1,16 @@
-// Função para Soma
-function Soma(){
+// Declaração de variáveis
 
-    n1=parseFloat(document.getElementById("n1").value)
+var n1;
+var n2;
+
+n1=parseFloat(document.getElementById("n1").value)
     console.log(n1)
 
-    n2=parseFloat(document.getElementById("n2").value)
+n2=parseFloat(document.getElementById("n2").value)
     console.log(n2)
 
+// Função para Soma
+function Soma(){
     document.getElementById("resultado").value = n1 + n2
 }
     // Função para subtração
